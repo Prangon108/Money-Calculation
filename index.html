@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Money Saving Guide</title>
+    <!-- bootstrap cdn link is here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <header>
+        <!-- title of the page -->
+        <h3 class="text-center p-5 text-primary">Ultimate <span class="text-danger">Money Saving</span> Tool</h3> 
+    </header>
+    <main>
+        <div class="row"> 
+            <div class="col">
+                <img src="images/money.jpg" alt="">
+
+            </div>
+            <div class="text-center bg-gray  col">
+              <h4 class="font-weight: 700   p-5">Income</h4>
+              <p ><span class="font-weight:700" >Income    :</span><input id="income-amount" type="value">   </p>
+              <h4 class="font-weight: 700   p-3">Expenses</h4>
+              <p><span class="font-weight:700">Food    :</span><input id="food" type="value">   </p>
+              <p><span class="font-weight:700">Rent    :</span><input id="rent" type="value">   </p>
+              <p><span class="font-weight:700">Clothes    :</span><input id="clothes" type="value">   </p>
+              <button class="text-center btn btn-info text-light rounded" id="calculate-button"><h6>Calculate</h6></button>
+              <p id="error" class="text-danger mx-4"></p>
+              <h4 class="font-weight: 700   p-2">Total Expenses :<span id="expense-input">00</span></h4>
+              <h4 class="font-weight: 700   p-2"> Balance :<span id="balance-input">00</span></h4>
+              <p><span class="font-weight:700">Save   :</span><input id="percents" type="value"> % <button class="text-center btn btn-info text-light rounded"><h6 id="balance-save">Save</h6></button> </p>
+              <p id="error1" class="text-danger mx-4"></p>
+              <h4 class="font-weight: 700   p-2">Saving Amount :<span id="save-amount"> 00</span> </h4>
+              <h4 class="font-weight: 700   p-2">Remaining Balance :<span id="remaining-balance" >00</span></h4>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/bank.js"></script>
+</body>
+</html>
